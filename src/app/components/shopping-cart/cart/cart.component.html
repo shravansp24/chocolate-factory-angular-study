@@ -1,0 +1,17 @@
+<div class="alert alert-info" *ngIf="cartItems.length==0">Cart is empty</div>
+<ul class="list-group" *ngIf="cartItems.length>0">
+    <li class="list-group-item list-group-item-dark">Cart</li>
+    <li class="list-group-item" *ngFor="let item of cartItems">
+        <app-cart-item [cartItem]="item"></app-cart-item>
+    </li>
+
+    <li class="list-group-item list-group-item-dark">
+        <strong>Total </strong>{{cartTotal | currency : "INR"}} 
+    </li>
+    <li class="list-group-item">
+        <a class="btn btn-block btn-outline-dark btn-sm" (click)="clearCart()">Clear cart</a>
+    </li>
+    <li class="list-group-item">
+        <a class="btn btn-block btn-outline-dark btn-sm" routerLink="/checkout">Checkout</a>
+    </li>
+</ul>

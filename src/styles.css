@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: title-font;
+    src: url("./assets/head-font.ttf");
+}
+
+@font-face{
+    font-family: item-font;
+    src: url("./assets/item-font.ttf");
+}
+
+body{
+    background: radial-gradient(circle, rgb(248, 245, 233), rgb(255, 214, 152));
+    font-family: item-font;
+}
+
+.filters{
+    font-size: small;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#app-header{
+    background-color: rgb(218, 188, 149);
+    font-family: title-font;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.alert-info {
+    color: black;
+    background-color: rgb(218, 188, 149);
+    border-color: rgb(218, 188, 149);
+}
